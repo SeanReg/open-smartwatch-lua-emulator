@@ -30,7 +30,7 @@ def runScript(script, resx, resy, fps):
         hal.checkButtons()
         app.loop()
         
-        #pygame.display.flip()
+        hal.flushCanvas()
         clock.tick(fps)
 
     app.stop()
